@@ -2,6 +2,16 @@
 
 Das Repository stellt den praktischen Teil meiner Bachelorarbeit dar. Das orginale Repository wurde wurde um einen Flask Webserver erweiter und bietet somit eine einfache möglichkeit eigene Queries und Datenbanken über eine Webschnitstelle zu testen.
 
+## Ausführung
+Folgen Sie den unten aufgeführten Schritten zur installation des GAP-text2SQL.
+
+Anschließend führen Sie den Server mit
+
+```
+bash start_app.sh
+```
+im Verzeichnis rat-sql-gap aus.
+
 ## GAP-text2SQL: Learning Contextual Representations for Semantic Parsing with Generation-Augmented Pre-Training
 
 Code and model from our [AAAI 2021 paper](https://arxiv.org/abs/2012.10309)
