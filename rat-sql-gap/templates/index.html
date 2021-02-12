@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Demo: Bachelorarbeit - Untersuchung maschineller Verfahren zur Übersetzung natürlicher Sprache in SQL-Befehle</h1>
+
+<p>Diese Webseite dient zur Veranschaulichung des <a href="https://github.com/awslabs/gap-text2sql" target="_blank">GAP-text2SQL</a> Netzwerkes.</p>
+<p>Funktionsweise: Stellen Sie bitte eine Anfrage und fügen Sie eine <b>.sqlite Datei</b> ein.</p>
+<p>Eine Datei muss nicht angegeben werden. Es wird dann die zuletzt übergebene .sqlite Datenbank genutzt.</p>
+<p>Bekannter fehler: Der Begriff 'terminal' erscheint in der Aussagabe. Grund hiefür ist das GAP keine Eingabewerte in der Ausgabe unterstützt.</p>
+<p>Der Debug-Modus ist aktiviert. Fehler werden als Traceback ausgegeben.</p>
+<br>
+<hr>
+<br>
+<form method="post" enctype="multipart/form-data" action="http://localhost:8888/">
+.sqlite Datenbank: (optional) <input type="file" name="file" value=".sqlite - Datei" id="file">
+<br><br>
+Ihre Anfrage: <input type="text" name="query" placeholder="In englisch" size="60">
+<input type="submit" value="Vorhersagen">
+</form>
+{% if prediction %}
+<h3>Prediction: </h3>
+<code style="white-space: pre">{{ prediction }}</code>
+{% endif %}
+<br><br>
+<hr>
+<h4> - Kevin Friedl</h4>
+
+</body>
+</html>
