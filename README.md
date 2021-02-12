@@ -1,6 +1,8 @@
-test
+# Bachelorarbeit - Untersuchung maschineller Verfahren zur Übersetzung natürlicher Sprache in SQL-Befehle
 
-# GAP-text2SQL: Learning Contextual Representations for Semantic Parsing with Generation-Augmented Pre-Training
+Das Repository stellt den praktischen Teil meiner Bachelorarbeit dar. Das orginale Repository wurde wurde um einen Flask Webserver erweiter und bietet somit eine einfache möglichkeit eigene Queries und Datenbanken über eine Webschnitstelle zu testen.
+
+## GAP-text2SQL: Learning Contextual Representations for Semantic Parsing with Generation-Augmented Pre-Training
 
 Code and model from our [AAAI 2021 paper](https://arxiv.org/abs/2012.10309)
 
@@ -85,12 +87,6 @@ python run.py eval experiments/spider-configs/gap-run.jsonnet
 ```
 
 You then get the inference results and evaluation results in the paths:`ie_dirs/bart_run_1_true_1-step41000.infer` and `ie_dirs/bart_run_1_true_1-step41000.eval`.
-
-## Training
-
-```bash
-python run.py train experiments/spider-configs/gap-run.jsonnet
-```
 
 ## Security
 
